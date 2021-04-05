@@ -1,0 +1,28 @@
+
+<!---- <%inherit file="w.tpl"/>-->
+     
+<table>
+   <tr class="customTable">
+     
+      <th>Zertifikate/Bezeichnung</th>
+      <th>Zertifikate/Beschreibung</th>
+      
+   </tr>
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context.length; loop_i++@
+   @entry_a = context[loop_i];@
+   <tr id="#entry_a['id']#">
+      <td>#entry_a['col7']#</td>
+      <td>#entry_a['col8']#</td>
+      
+   </tr>
+   @endfor@
+</table>
+
+
+
+
+
+
+

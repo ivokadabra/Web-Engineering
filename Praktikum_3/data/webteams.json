@@ -1,0 +1,23 @@
+[
+   {
+      "col4": "aaaaa", 
+      "col2": "Wert 1/2", 
+      "id": "1", 
+      "col3": "dddd", 
+      "col1": "purvoto"
+   }, 
+   {
+      "col4": "nnnnn", 
+      "col2": "nnnnn", 
+      "id": "4", 
+      "col3": "nnnnn", 
+      "col1": "sadf"
+   }, 
+   {
+      "col4": "asdasdas", 
+      "col1": "papapa", 
+      "col2": "dasdasdas", 
+      "id": "5", 
+      "col3": "asdasdasd"
+   }
+]

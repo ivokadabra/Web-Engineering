@@ -1,0 +1,95 @@
+ data=self.db_os.read_px(mit)
+        data.pop(int(i))
+        data.insert(int(i),"stoniert")
+        self.db_os.update_px(mit,data)
+        return self.createweiter(mit)
+
+
+
+
+          <div>Anzahl Mitarbeiter: ${in_1}, Anzahl Weiterbildungen: ${in_2} </div>
+              
+  
+    <div>
+      <a href="/index">zurück</a>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+
+	
+</head>
+<body>
+
+<div id="myNavbar" class="wrapper">
+    <div class="sidebar">
+        <h6>Mitarbeiterqualifizierung</h6>
+        <ul>
+            <li><a href="/start"><i class="fas fa-address-card"></i>Startseite</a></li>
+            <li><a href="/index_2"><i class="fas fa-home"></i>Pflege Mitarbeiter</a></li>
+            <li><a href="/index_3"><i class="fas fa-user"></i>Pflege Weiterbildung</a></li>
+            <li>Teilname</li>
+            <li><a href="/mitarbeiter"><i class="fas fa-blog"></i>Sichtweise Mitarbeiter</a></li>
+            <li><a href="/weit"><i class="fas fa-address-book"></i>Sichtweise Weiterbildung</a></li>
+             <li>Auswertung</li>
+            <li><a href="/sort_mitarbeiter"><i class="fas fa-blog"></i>Mitarbeiter</a></li>
+            <li><a href="/sort_weiterbildung"><i class="fas fa-address-book"></i>Weiterbildung</a></li>
+             <li><a href="/sort_zertifikate"><i class="fas fa-address-book"></i>Zertifikate</a></li>
+        </ul> 
+        
+    </div>
+    <div class="main_content">
+        <div class="header">Ivaylo Iliev.</div>  
+        <div class="info"></div>
+    </div>
+   
+</div> 
+
+    
+
+
+</body>
+</html>
+
+
+
+
+
+
+[
+   {
+      "mit_id": "1", 
+      "status": [
+         "erfolg", 
+         "angebrochen", 
+         "stoniert"
+      ]
+   }, 
+   {
+      "mit_id": "5", 
+      "status": [
+         "angebrochen", 
+         "erfolg", 
+         "stoniert"
+      ]
+   }, 
+   {
+      "mit_id": "4", 
+      "status": [
+         "stoniert"
+      ]
+   }
+]

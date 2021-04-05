@@ -1,0 +1,24 @@
+[
+   {
+      "weiterbildung": "3", 
+      "mit": [
+         "1", 
+         "5"
+      ]
+   }, 
+   {
+      "weiterbildung": "2", 
+      "mit": [
+         "5", 
+         "1"
+      ]
+   }, 
+   {
+      "weiterbildung": "1", 
+      "mit": [
+         "4", 
+         "5", 
+         "1"
+      ]
+   }
+]

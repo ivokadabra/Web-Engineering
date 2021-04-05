@@ -1,0 +1,26 @@
+ retVal_s = ''
+        p=[]
+        proba=self.db_o.read_px();
+        mitarbeiter=[]
+        #ret=self.db_o1.read_px(retVal_s[0])
+        maxid=int(self.di_o1.readMaxId_p())
+        for i in range(0,len(proba)):
+            if proba[i]["mit_id"]==id:
+                mitarbeiter=proba[i]
+                break
+            
+                
+
+        if mitarbeiter!=[]:   
+          p.append("[")
+       
+          retVal_s=mitarbeiter["weiterbildung"]
+          counter=0
+          for i in range(0,maxid):
+           if str(i) in retVal_s:   
+            ret = self.getDetail_p1(str(i))
+            p.append(ret)
+            counter+=1
+            if len(retVal_s)-1>=counter:
+             p.append(",")
+          p.append("]")

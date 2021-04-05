@@ -1,0 +1,35 @@
+
+<!---- <%inherit file="w.tpl"/>-->
+     
+   <table>
+      <tr class="customTable">
+         <th>Bezeichnung</th>
+         <th>Von</th>
+         <th>Bis</th>
+         <th>Beschreibung</th>
+         <th>maximale Teilnehmerzahl</th>
+         <th>minimale Teilnehmerzahl</th>
+         
+      </tr>
+      @var entry_a;@
+      @var loop_i;@
+      @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@
+      <tr id="#entry_a['id']#">
+         <td>#entry_a['col1']#</td>
+         <td>#entry_a['col2']#</td>
+         <td>#entry_a['col3']#</td>
+         <td>#entry_a['col4']#</td>
+         <td>#entry_a['col5']#</td>
+         <td>#entry_a['col6']#</td>
+         
+      </tr>
+      @endfor@
+   </table>
+   <button id="erfolg_teil">Erfolgreiche Teihnehmer Zeigen</button>
+  
+
+
+
+  
+   

@@ -1,0 +1,38 @@
+<!-- Template -->
+<!-- Contentbereich -->
+<table>
+
+   <tr class="customTable">
+      <th>An dennen Man teilnimmt</th>
+   </tr>
+   <tr class="customTable">
+      <th>Bezeichnung</th>
+      <th>Von</th>
+      <th>Bis</th>
+      <th>Beschreibung</th>
+      <th>maximale Teilnehmerzahl</th>
+      <th>minimale Teilnehmerzahl</th>
+      <th>Status</th>
+      <th>Zertfifkate</th>
+   </tr>
+   @var entry_a;@
+   @var loop_i;@
+   @for loop_i = 0; loop_i < context[0].length; loop_i++@
+   @entry_a = context[0][loop_i];@
+   @entry_b = context[1][0][loop_i];@
+   @entry_c = context[1][1][loop_i];@
+   <tr id="#entry_a['id']#">
+      <td>#entry_a['col1']#</td>
+      <td>#entry_a['col2']#</td>
+      <td>#entry_a['col3']#</td>
+      <td>#entry_a['col4']#</td>
+      <td>#entry_a['col5']#</td>
+      <td>#entry_a['col6']#</td>
+      <td>#entry_b#</td>
+      <td>#entry_c#</td>
+   </tr>
+   @endfor@
+</table>
+
+
+<!-- EOF -->

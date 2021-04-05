@@ -1,0 +1,34 @@
+
+<!---- <%inherit file="w.tpl"/>-->
+     
+   <table>
+      <tr class="customTable">
+         <th>Name (1)</th>
+         <th>Vorname (1)</th>
+         <th>Akademische Grade (1)</th>
+         <th>Tätigkeit (1)</th>
+         
+      </tr>
+      @var entry_a;@
+      @var loop_i;@
+      @for loop_i = 0; loop_i < context.length; loop_i++@
+      @entry_a = context[loop_i];@
+      <tr id="#entry_a['id']#">
+         <td>#entry_a['col1']#</td>
+         <td>#entry_a['col2']#</td>
+         <td>#entry_a['col3']#</td>
+         <td>#entry_a['col4']#</td>
+         
+      </tr>
+      @endfor@
+   </table>
+   <button id="idShowListEntry">Ändern</button>
+   <button id="Form">Erfassen</button>
+   <button id="Weiterbildung_mit">Weiterbildung zeigen</button>
+   <button id="Anmelden">Anmelden</button>
+   <button id="delete">Delete</button>
+
+
+
+  
+   

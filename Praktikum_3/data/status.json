@@ -1,0 +1,24 @@
+[
+   {
+      "mit_id": "1", 
+      "status": [
+         "erfolg", 
+         "angemeldet", 
+         "angemeldet"
+      ]
+   }, 
+   {
+      "mit_id": "5", 
+      "status": [
+         "angemeldet", 
+         "angemeldet", 
+         "stoniert"
+      ]
+   }, 
+   {
+      "mit_id": "4", 
+      "status": [
+         "stoniert"
+      ]
+   }
+]

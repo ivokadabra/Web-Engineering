@@ -1,0 +1,49 @@
+ c=len(self.db_ow.read_px(mit)
+        for l in range(0,c+1):
+                if str(i) == self.db_om.read_px(mit)[l]:
+                break
+
+        position=l
+        data=self.db_os.read_px(mit)
+        data.pop(position)
+        data.insert(position,"stoniert")
+        self.db_os.update_px(mit,data)
+
+
+        return
+
+
+
+
+        def createweiter(self, id):
+
+       ## data_u = []
+       ## if self.db_o2.read_px(id) != None and self.db_o2.read_px(id)[1] < "2020-11-22":
+         ##   data_u = self.db_o2.read_px(id)
+       ## else:
+         ##   data_u = self.db_o2.getDefault_px()
+        ##data_o = self.pro()
+        ##print(data_o)
+        ##print(id)
+        ##i = len(data_o)
+        data_u=[]
+        p=self.db_os.read_px(id)
+        i=len(p)
+        data_o=[]
+        counter=len(self.db_o2.read_px())
+        for l in range(1,counter+1):
+            if self.db_om.read_px(str(l))!=None and str(l) in self.db_om.read_px(str(l)):
+               data_o.append(self.db_o2.read_px(str(l)))
+        
+        gosho=len(self.db_o2.read_px())
+        for k in range(1,gosho+1):
+         if self.db_o2.read_px(str(k)) !=None and self.db_o2.read_px(str(k))[1] > "2020-11-22" :
+           data_u.append(self.db_o2.read_px(str(k)))
+        
+        if data_u==[]:
+            l=0
+            data_u=self.db_o2.getDefault_px()
+        else:l=len(data_u) 
+        i=len(data_o)  
+
+        return self.view_o.weit(data_u,data_o,i, id,p,l)
